@@ -1,0 +1,164 @@
+/*
+Theme Name: willow
+Template: twentysixteen
+Theme URI:
+Author: Takuma Misumi
+Author URI: http://blog.mismithportfolio.com/
+Version: 1.0.2
+Description: This theme extend default theme "Twenty Sixteen".In PC views,this theme exchange the article page columns in one column from two columns, and Photos in black and white.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, gray, white, dark, one-column, right-sidebar, responsive-layout
+Text Domain: willow
+*/
+
+/* header */
+.site-header {
+  padding-top: 0;
+}
+.single-post .site-header {
+  padding-bottom: 0;
+}
+
+/* article layout */
+.single-post .site-content {
+  padding: 0;
+}
+
+.single-post .content-area,
+.single-post .sidebar,
+body.single-post article:not(.type-page) .entry-content,
+body.single-post article:not(.type-page) .entry-footer,
+.single-post .comments-area,
+.single-post .post-navigation {
+  float: none;
+  margin: 0 auto;
+}
+
+.single-post .content-area {
+  width: 100%;
+}
+
+.single-post .entry-content,
+.single-post .sidebar,
+.single-post .comments-area,
+.single-post .post-navigation {
+  width: 96%;
+  max-width: 750px;
+}
+
+.single-post .sidebar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* entry */
+.single-post .entry-header {
+  display: table;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  min-height: 400px;
+  margin-bottom: 80px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.single-post .entry-header,
+.post-thumbnail {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.single-post .entry-header-meta {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.single-post .entry-header-meta span {
+  display: block;
+}
+
+.single-post .entry-header-meta a {
+  color: #fff;
+}
+
+.single-post .post-thumbnail {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+/* image style */
+.single-post .post-thumbnail img {
+  position: absolute;
+  max-width: inherit;
+  width: auto;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+     -moz-transform: translate3d(-50%, -50%, 0);
+           -ms-transform: translate(-50%, -50%);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.header-image img,
+.entry-header img,
+.single-post .post-thumbnail img {
+  -webkit-filter: grayscale(100%);
+     -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+       -o-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.single-post .comments-area {
+  margin-bottom: 40px;
+}
+
+.single-post .entry-footer {
+  width: 96%;
+}
+
+/* 710px */
+@media screen and (min-width: 44.375em) {
+  .single-post .entry-header {
+    width: 100.02%;
+    min-height: 500px;
+  }
+  .single-post .post-thumbnail img {
+    width: auto;
+    height: auto;
+  }
+
+  .header-image a:hover img,
+  .header-image a:focus img,
+  .entry-header a:hover img,
+  .entry-header a:focus img {
+    -webkit-transition:all 0.25s ease-in-out;
+        transition:all 0.25s ease-in-out;
+    -webkit-filter: grayscale(0);
+       -moz-filter: grayscale(0);
+        -ms-filter: grayscale(0);
+         -o-filter: grayscale(0);
+            filter: grayscale(0);
+  }
+
+  .header-image a:hover img,
+  a.post-thumbnail:hover,
+  a.post-thumbnail:focus {
+    opacity: 1;
+  }
+}
