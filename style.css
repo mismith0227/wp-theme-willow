@@ -17,10 +17,15 @@ Text Domain: willow
   padding-top: 0;
 }
 .single-post .site-header {
+  max-width: 1320px;
   padding-bottom: 0;
 }
 
 /* article layout */
+.single-post .site-inner {
+  max-width: inherit;
+}
+
 .single-post .site-content {
   padding: 0;
 }
