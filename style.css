@@ -32,8 +32,8 @@ Text Domain: willow
 
 .single-post .content-area,
 .single-post .sidebar,
-body.single-post article:not(.type-page) .entry-content,
-body.single-post article:not(.type-page) .entry-footer,
+.single-post article:not(.type-page) .entry-content,
+.single-post article:not(.type-page) .entry-footer,
 .single-post .comments-area,
 .single-post .post-navigation {
   float: none;
