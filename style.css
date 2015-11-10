@@ -45,6 +45,7 @@ Text Domain: willow
 }
 
 .single-post .entry-content,
+.single-post .entry-footer,
 .single-post .sidebar,
 .single-post .comments-area,
 .single-post .post-navigation {
@@ -131,10 +132,6 @@ Text Domain: willow
 
 .single-post .comments-area {
   margin-bottom: 40px;
-}
-
-.single-post .entry-footer {
-  width: 96%;
 }
 
 /* 710px */
