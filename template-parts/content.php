@@ -3,8 +3,8 @@
  * The template part for displaying content
  *
  * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
+ * @subpackage willow
+ * @since willow 1.0
  */
 ?>
 
@@ -20,7 +20,7 @@
 	</header><!-- .entry-header -->
 
 	<?php twentysixteen_excerpt(); ?>
-	
+
 	<div class="entry-content">
 		<?php
 			/* translators: %s: Name of current post */

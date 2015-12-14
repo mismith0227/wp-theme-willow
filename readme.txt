@@ -1,6 +1,6 @@
 === willow ===
 Parent Theme: Twenty Sixteen
-Version: 1.0.6
+Version: 1.0.7
 Author: Takuma Misumi
 Theme URI:
 Tags: black, gray, white, dark, monochrome, one-columns, right-sidebar, responsive-layout
