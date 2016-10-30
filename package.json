@@ -1,0 +1,41 @@
+{
+  "name": "willow",
+  "version": "1.0.7",
+  "description": "=== willow === Parent Theme: Twenty Sixteen Version: 1.0.7 Author: Takuma Misumi Theme URI: Tags: black, gray, white, dark, monochrome, one-columns, right-sidebar, responsive-layout Requires at least: 4.1 Tested up to: 4.4 Stable tag: 4.4 License: GPLv2 or later License URI: http://www.gnu.org/licenses/gpl-2.0.html",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "prod": "gulp --env production",
+    "build": "gulp build --env production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mismith0227/wp-theme-willow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mismith0227/wp-theme-willow/issues"
+  },
+  "homepage": "https://github.com/mismith0227/wp-theme-willow#readme",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "browser-sync": "^2.14.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-if": "^2.0.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "minimist": "^1.2.0",
+    "run-sequence": "^1.2.2",
+    "webpack": "^1.13.2",
+    "webpack-stream": "^3.2.0"
+  }
+}

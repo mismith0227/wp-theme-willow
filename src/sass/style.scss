@@ -11,6 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, gray, white, dark, one-column, right-sidebar, responsive-layout
 Text Domain: willow
 */
+
 /* header */
 .site-header {
   padding-top: 0;
@@ -80,7 +81,7 @@ body.single-post article:not(.type-page) .entry-footer,
   display: table-cell;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, .5);
   color: #fff;
   vertical-align: middle;
   text-align: center;
@@ -114,15 +115,13 @@ body.single-post article:not(.type-page) .entry-footer,
   min-height: 100%;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
 }
 
 .header-image img,
 .entry-header img,
 .single-post .post-thumbnail img {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .single-post .comments-area {
@@ -135,19 +134,20 @@ body.single-post article:not(.type-page) .entry-footer,
     width: 100.02%;
     min-height: 500px;
   }
+
   .single-post .post-thumbnail img {
     width: auto;
     height: auto;
   }
+
   .header-image a:hover img,
   .header-image a:focus img,
   .entry-header a:hover img,
   .entry-header a:focus img {
-    -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+    filter: grayscale(0);
   }
+
   .header-image a:hover img,
   a.post-thumbnail:hover,
   a.post-thumbnail:focus {
