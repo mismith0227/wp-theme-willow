@@ -13,8 +13,7 @@ const production = options.env === 'production'
 
 const config = {
   src: 'src',
-  localUrl: 'modernize.dev',
-  // localUrl: `${pkg.name}.dev`,
+  localUrl: `${pkg.name}.dev`,
   envProduction: production
 }
 
